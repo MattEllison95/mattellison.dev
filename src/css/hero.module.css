@@ -1,0 +1,35 @@
+#root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.hero-container {
+    display: grid;
+    place-items: center;
+    height: 300px;
+    text-align: center;
+    z-index: 1;
+
+    margin: 0 auto 100px;
+}
+
+.hero-container img {
+    width: 200px;
+    border-radius: 50%;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.hero-container h1 {
+    margin: 0;
+}
+
+.hero-container h2 {
+    font-weight: lighter;
+    margin: 0;
+}
+
+.hero-container img:hover {
+    box-shadow: 0 0 2em #4CBB17; /* Kelly green glow */
+}
+

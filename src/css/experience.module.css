@@ -1,0 +1,130 @@
+.experienceBox,
+.schoolBox {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    max-height: 500px;
+    width: 100%;
+    max-width: 1250px;
+    height: 100px;
+    transition: height 0.4s ease;
+    background: #020617;
+}
+
+.schoolBox {
+    cursor: auto;
+}
+
+.open {
+    height: 360px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+}
+
+.schoolBox .logo {
+    width: 75px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.companyName {
+    font-size: 1.5em;
+    margin: 0;
+    text-align: left;
+}
+
+.title {
+    font-size: 1.2em;
+    margin: 0;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.description {
+    padding: 16px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.duration {
+    color: #888;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+}
+
+.experienceHeader {
+    font-size: 2em;
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.arrowContainer {
+    transition: transform 0.4s ease;
+}
+
+.experienceBox.open .arrowContainer {
+    transform: translateX(-50%) rotate(180deg);
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .experienceBox,
+    .schoolBox {
+        padding: 12px;
+        margin: 12px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .experienceBox.open {
+        height: auto;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 12px;
+    }
+
+    .companyName {
+        font-size: 1.2em;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+
+    .description {
+        padding: 12px;
+    }
+
+    .arrowContainer {
+        bottom: 12px;
+    }
+
+    .duration {
+        display: none;
+    }
+}

@@ -27,16 +27,9 @@ export const Hero = () => {
                 <FiMail className="text-lg text-white"/>
                 <h2 className="text-lg text-white">matt@ellison.email</h2>
             </a>
-            {/*<a href="tel:3039473241" className="flex items-center space-x-2 mt-2">*/}
-            {/*    <FiPhone className="text-lg text-white"/>*/}
-            {/*    <h2 className="text-lg text-white">(303) 947-3241</h2>*/}
-            {/*</a>*/}
             <div className="flex justify-center space-x-4 mt-4">
                 <motion.a href="https://github.com/MattEllison95" whileHover={{scale: 1.1}}>
                     <RiGithubFill className="w-8 h-8 p-2 box-content"/>
-                </motion.a>
-                <motion.a href="https://x.com/Matt_Ellison7" whileHover={{scale: 1.1}}>
-                    <RiTwitterXFill className="w-8 h-8 p-2 box-content"/>
                 </motion.a>
                 <motion.a href="https://www.linkedin.com/in/matt-ellison-835a01b9/" whileHover={{scale: 1.1}}>
                     <RiLinkedinBoxFill className="w-8 h-8 p-2 box-content"/>
